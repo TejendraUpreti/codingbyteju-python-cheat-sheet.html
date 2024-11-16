@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Python Cheat Sheet</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+</head>
+
+<!-- div.section>h2+div.snippet>h2+div.codeblock>div.ex+code -->
+
+<body>
+    <nav>
+        <ul class="left">
+
+            <li>
+                <a href="index.html">Python-🐍</a>
+            </li>
+            
+            <li>
+                <a href="numpy.html">NumPy-📚</a>
+            </li>
+            
+            <li>
+                <a href="pandas.html">Pandas-📚</a>
+            </li>
+            
+        </ul>
+        <ul class="right">
+            <li>
+                <a href="https://tejendraupreti.github.io/codingbyteju-html-css-sheet.github.io/" target="_blank" rel="noopener noreferrer">
+                    <img class="social-logo" src="github.svg">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="size-boxes">
+        <div class="size-box box-1">100px</div>
+        <div class="size-box box-2">100px</div>
+        <div class="size-box box-3">100px</div>
+        <div class="size-box box-4">100px</div>
+        <div class="size-box box-5">100px</div>
+        <div class="size-box box-6">100px</div>
+        <div class="size-box box-7">100px</div>
+        <div class="size-box box-8">100px</div>
+        <div class="size-box box-9">100px</div>
+        <div class="size-box box-10">100px</div>
+        <div class="size-box box-11">100px</div>
+        <div class="size-box box-12">100px</div>
+        <div class="size-box box-13">100px</div>
+        <div class="size-box box-14">100px</div>
+        <div class="size-box box-15">100px</div>
+        <div class="size-box box-16">100px</div>
+        <div class="size-box box-17">100px</div>
+        <div class="size-box box-18">100px</div>
+        <div class="size-box box-19">100px</div>
+        <div class="size-box box-20">100px</div>
+        <div class="size-box box-21">100px</div>
+        <div class="size-box box-22">100px</div>
+        <div class="size-box box-23">100px</div>
+        <div class="size-box box-24">100px</div>
+    </div>
+
+    <section id="html">
+        <h1>Python</h1>
+        <section id="html-templates">
+            
+            <h2>Basics</h2>
+            <div class="snippet span-7">
+                <!-- <h2>Python is Programming language.</h2> -->
+                <div class="codeblock">
+                    <code>Basic Syntax from the python programming language.</code>
+                </div>
+            </div>
+
+            <h2>Showing Output To User</h2>
+            <div class="snippet span-7">
+                <h2>The print function is used to display or print output as follows.</h2>
+                <div class="codeblock">
+                    <code>print&#40;"Content that you wanna print on screen"&#41;</code>
+                </div>
+            </div>
+
+            <!-- <h2>Showing Output To User</h2> -->
+            <div class="snippet span-7">
+                <h2>we can display the content present in object using print function as follows:-</h2>
+                <div class="codeblock">
+
+                    <!-- <code>Basic Syntax from the python programming language.</code> -->
+                    <code>name = "Teju"</code>
+                    <code>    print&#40;"Hi My Name Is: ", name&#41;</code>
+                    <br>
+                    <code><u>#Output:</u> Teju</code>
+
+                </div>
+            </div>
+
+            <h2>Taking Input From the User</h2>
+            <div class="snippet span-7">
+                <h2>The input function is used to take input as string or character from the user as follows.</h2>
+                <div class="codeblock">
+
+                    <code>var = input&#40;"Enter your Name"&#41;</code>
+                    <code>    print&#40;"My Name Is: ", var&#41;</code>
+                    <br>
+                    <code><u>#Output:</u> input_value</code>
+                    
+                </div>
+            </div>
+
+            <div class="snippet span-7">
+                <h2>To take input in form of other datatypes we need to type caste them as follows:-</h2>
+                <h2>To take input as an integer:-</h2>
+
+                    <div class="codeblock">
+                <code>var = int&#40;input&#40;"Enter the number values: "&#41;&#41;</code>
+                <code>    print&#40;var&#41;</code>
+                <br>
+                <code><u>#Output:</u> integer_input_value</code>
+                    
+                </div>
+            </div>    
+
+            <h2>Range() Function</h2>
+            <div class="snippet span-7">
+                <h2>range function returns a sequence of numbers, eg, numbers starting from 0 to n-1 for range(0,n).</h2>
+                <div class="codeblock">
+                    <!-- <code>var = float&#40;input&#40;"Enter the float value: "&#41;&#41;</code> -->
+                    <code>print&#40;int_start_value, int_stop_value, int_step_value&#41;</code>
+                    <!-- <code><u>#Output:</u> float_input_value</code> -->
+                </div>           
+            </div>
+
+            <div class="snippet span-7">
+                <h2>Here the start values and step value are by default 1 if not mentioned by the programmer.
+                    but int_stop_value is the compulsory parameter in range function.
+                    <br> <br>
+                    Example: 👇 Display all even numbers between 1 to 100.</h2>
+                    
+                <div class="codeblock">
+                    <code>for in in range&#40;0, 101, 2&#41;:</code>
+                    <code>    print&#40;i&#41;</code>
+                    <!-- <code><u>#Output:</u> float_input_value</code> -->
+                </div>           
+            </div>
+
+            
+            <h2>Comments</h2>
+            <div class="snippet span-7">
+                <h2>Comments are used to make the code more understandable for programmers, and they are not executed by compiler of interpreter.
+                    </h2><br>
+                    <h2>Single line comment: 👇</h2>
+                <div class="codeblock">
+                    <code># This is a single line comment</code>
+                    <!-- <code>var = float&#40;input&#40;"Enter the float value: "&#41;&#41;</code> -->
+                    <!-- <code>print&#40;int_start_value, int_stop_value, int_step_value&#41;</code> -->
+                    <!-- <code><u>#Output:</u> float_input_value</code> -->
+                </div>           
+            </div>
+            <div class="snippet span-7">
+                <h2>Multi-line comment: 👇</h2>
+                <div class="codeblock">
+                    <code>'''This is a <br> Multi-line <br> comment'''</code>
+                    <!-- <code>var = float&#40;input&#40;"Enter the float value: "&#41;&#41;</code> -->
+                    <!-- <code>print&#40;int_start_value, int_stop_value, int_step_value&#41;</code> -->
+                    <!-- <code><u>#Output:</u> float_input_value</code> -->
+                </div>           
+            </div>
+
+            <h2>Escape Sequence</h2>
+            <div class="snippet span-7">
+                <h2>An escape sequence is a sequence of characters; it doesn't represent itself(but i translated into another character) when used inside string literal or character. Some of the escape sequence characters are as follows:</h2>
+                <!-- <h2>New </h2>
+                <div class="codeblock">
+                    <code>var = float&#40;input&#40;"Enter the float value: "&#41;&#41;</code>
+                    <!-- <code>    print&#40;int_start_value, int_stop_value, int_step_value&#41;</code> -->
+                    <!-- <code><u>#Output:</u> float_input_value</code> -->
+                </div>            
+            </div>
+
+            <h2>Newline</h2>
+            <div class="snippet span-7">
+                <h2>Newline Character.</h2>
+                 <!-- <h2>New </h2> -->
+                <div class="codeblock">
+                    <!-- <code>var = float&#40;input&#40;"Enter the float value: "&#41;&#41;</code> -->
+                    <code>print&#40;"\n"&#41;</code>
+                    <!-- <code><u>#Output:</u> float_input_value</code> -->
+                </div>            
+            </div>
+
+        </section>
+        <section id="html-elements">
+            <!-- <h2>Elements</h2>
+            <div class="snippet span-rows-2 span-2">
+                <h2>Headers</h2>
+                <div class="codeblock ex-header">
+                    <code><h1>&lt;h1&gt;</h1></code>
+                </div>
+                <div class="codeblock ex-header">
+                    <code><h2>&lt;h2&gt;</h2></code>
+                </div>
+                <div class="codeblock ex-header">
+                    <code><h3>&lt;h3&gt;</h3></code>
+                </div>
+                <div class="codeblock ex-header">
+                    <code><h4>&lt;h4&gt;</h4></code>
+                </div>
+                <div class="codeblock ex-header">
+                    <code><h5>&lt;h5&gt;</h5></code>
+                </div>
+                <div class="codeblock ex-header">
+                    <code><h6>&lt;h6&gt;</h6></code>
+                </div> -->
+            </div>
+            <div class="snippet span-2">
+                <h2>Backslash</h2>
+                <h3>It add a backslash</h3>
+                <div class="codeblock">
+                    <code>print&#40;"\\"&#41;</code>
+                </div>
+            </div>
+            
+            <div class="snippet span-2">
+                <h2>Single Quote</h2>
+                <h3>It adda a single quotation mark.</h3>
+                <div class="codeblock">
+                    <code>print&#40;"\'"&#41;</code>
+                </div>
+            </div>
+
+            <div class="snippet span-2">
+                <h2>Tab</h2>
+                <h3>It gives a tab space.</h3>
+                <div class="codeblock">
+                    <code>print&#40;"\t"&#41;</code>
+                </div>
+            </div>
+
+            <div class="snippet span-2">
+                <h2>Backspace</h2>
+                <h3>It adds a backspace.</h3>
+                <div class="codeblock">
+                    <code>print&#40;"\b"&#41;</code>
+                </div>
+            </div>
+
+            <div class="snippet span-2">
+                <h2>Octal Value</h2>
+                <h3>It represents the value of an octal number.</h3>
+                <div class="codeblock">
+                    <code>print&#40;"\ooo"&#41;</code>
+                </div>
+            </div>
+
+            <div class="snippet span-2">
+                <h2>Hex Value</h2>
+                <h3>It represents the value of a hex number.</h3>
+                <div class="codeblock">
+                    <code>print&#40;"\xhh"&#41;</code>
+                </div>
+            </div>
+            
+            <div class="snippet span-12">
+                <h2>Carriage Return</h2>
+                <h3>Carriage return or\r will just work as you have shifted your cursor to the beginning of the string or line.</h3>
+                <div class="codeblock">
+                    <code>print&#40;"\r"&#41;</code>
+                </div>
+            </div>
+
+            <!-- <div class="snippet">
+                <h2>Section</h2>
+                <h3>A unit of content</h3>
+                <div class="codeblock">
+                    <code>&lt;section&gt;</code>
+                    <code>  &lt;h2&gt;Header&lt;/h2&gt;</code>
+                    <code>  content</code>
+                    <code>&lt;/section&gt;</code>
+                </div>
+            </div> -->
+            <!-- <div class="snippet">
+                <h2>Figure</h2>
+                <div class="codeblock">
+                    <code>&lt;figure&gt;</code>
+                    <code>  content</code>
+                    <code>  &lt;figcaption&gt;Caption&lt;/figcaption&gt;</code>
+                    <code>&lt;/figure&gt;</code>
+                </div>
+            </div> -->
+
+            <div class="snippet span-12">
+                <h2>Strings</h2>
+                <div class="codeblock" id="html-elements-nav">
+                    <!-- <div class="ex-element"> -->
+                        <div>
+                        Python string is a sequence of the characters, and each character can be individually accessed using its index.
+                    </div>
+                </div>
+            </div>
+
+            <div class="snippet span-12">
+                <h2>String</h2>
+                <div class="codeblock" id="html-elements-nav">
+                    <div class="ex-element">
+                        You can create String by enclosing text in both forms of quotes-single quotes or double quotes.
+                    </div>
+                    <code>variable_name = "String_data"</code>
+                    <br>
+                    <h4>Example: 👇</h4> <br>
+                    <code>name = "Tejendra Upreti"</code>
+                    <code>    print&#40;name&#41;</code>
+                    <br>
+                    <code>#Output: <b>Tejendra Upreti</b></code>
+                </div>
+            </div>
+        
+            <div class="snippet span-12">
+                <h2>Indexing</h2>
+                <div class="codeblock" id="html-elements-nav">
+                    <div class="ex-element">
+                        The position of every character placed in the string starts from 0(zero) position and step by step it ends at length-1(one) position.
+                    </div>
+                </div>
+                </div>    
+            
+                <div class="snippet span-12">
+                    <h2>Slicing</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Slicing refers to obtaining a sub-string from the given string. The following code will include index 1,2,3, and 4 from the variable named var_name Slicing of the string can be obtained by the following syntax.
+                        </div>
+                        <br>
+                        <code>string_var[int_start_value:int_stop_value:int_step_value]</code>
+                        <br>
+                        <code>var_name[1 : 5]</code>
+                        <br>
+                        <div>Here start and step value are considered 0 and 1 respectively if not mentioned by the programmer.</div>
+                    </div>
+                </div>
+            
+<!-- Start Method -->
+
+                <div class="snippet span-4">
+                    <h2>isalnum() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Return True if all the characters in the string are alphanumeric, else False.
+                        </div>
+                        <br>
+                        <code>string_variable.isalnum&#40;&#41;</code>
+                    </div>
+                </div>
+                
+                <div class="snippet span-4">
+                    <h2>isalpha() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Return True if all the characters in the string are alphabets.
+                        </div>
+                        <br>
+                        <code>string_variable.isalpha&#40;&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>isdecimal() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Return True if all the characters in the string are decimals.
+                        </div>
+                        <br>
+                        <code>string_variable.isdecimal&#40;&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>isdecimal() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Return True if all the characters in the string are decimals.
+                        </div>
+                        <br>
+                        <code>string_variable.isdecimal&#40;&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>isdigit() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Return True if all the characters in the string are digit.
+                        </div>
+                        <br>
+                        <code>string_variable.isdigit&#40;&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>islower() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Return True if all the characters in the string are lower.
+                        </div>
+                        <br>
+                        <code>string_variable.islower&#40;&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>isspace() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Return True if all the characters in the string are whitespaces.
+                        </div>
+                        <br>
+                        <code>string_variable.isspace&#40;&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>isupper() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Return True if all the characters in the string are upper case.
+                        </div>
+                        <br>
+                        <code>string_variable.isupper&#40;&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>lower() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Converts a string into lower case equivalent.
+                        </div>
+                        <br>
+                        <code>string_variable.lower&#40;&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>upper() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Converts a string into upper case equivalent.
+                        </div>
+                        <br>
+                        <code>string_variable.upper&#40;&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>strip() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            It removes leading and trailing spaces in the string.
+                        </div>
+                        <br>
+                        <code>string_variable.strip&#40;&#41;</code>
+                    </div>
+                </div>
+
+<!-- End Methods -->
+
+<!-- start List -->
+
+<div class="snippet span-12">
+    <h2>List</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            A List in python represents a list of comma-separated values of any data type between square brackets.
+        </div>
+        <br>
+        <code>var_name = &#91;elements1, element2 .......&#93;</code>
+        <br>
+        <div>These elements can be of different datatypes.</div>
+    </div>
+    </div> 
+
+<!-- end list -->
+
+<!-- start Indexing -->
+
+<div class="snippet span-12">
+    <h2>Indexing</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            The Position of every elements placed in the string starts from 0(zero) position and step by step it ends at length-1(one) position.
+            <br>
+            List is ordered, indexing,mutable and most flexible and dynamic collection of elements in python.
+        </div>
+        <!--<code>var_name = &#91;elements1, element2 .......&#93;</code> -->
+    </div>
+    </div> 
+
+    <!--end indexing-->
+
+<!-- start Empty list -->
+
+<div class="snippet span-12">
+    <h2>Empty List</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            This method allows you to create an empaty list.
+        </div>
+        <code>my_list = &#91;&#93;</code>
+    </div>
+    </div> 
+
+<!-- end list -->
+
+<!-- start list method -->
+
+    <div class="snippet span-4">
+        <h2>index() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Return the index of the first element with the specified value.
+            </div>
+            <br>
+            <code>list.index&#40;element&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>append() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Adds an element at the end of the list.
+            </div>
+            <br>
+            <code>list.append&#40;element&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>extend() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Add the elements of a given list(or any iterable) to the end of the current list.
+            </div>
+            <br>
+            <code>list.extend&#40;iterable&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>insert() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Adds an element at the specified position.
+            </div>
+            <br>
+            <code>list.insert&#40;position, element&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>pop() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Removes the element at the specified position and returns it.
+            </div>
+            <br>
+            <code>list.pop&#40;position&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>remove() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                The remove() method removes the first occurrence of a given item from the list.
+            </div>
+            <br>
+            <code>list.remove&#40;element&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>clear() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Removes all the elements from the list.
+            </div>
+            <br>
+            <code>list.clear&#40;&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>count() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Returns the number of elements with the specified value.
+            </div>
+            <br>
+            <code>list.count&#40;value&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>reverse() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Reverses the order of the list.
+            </div>
+            <br>
+            <code>list.reverse&#40;&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>sort() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Sorts the list.
+            </div>
+            <br>
+            <code>list.sort&#40;reverse=True|False&#41;</code>
+        </div>
+    </div>
+
+<!-- end list method -->
+
+<!--start tuple -->
+<h2>Tuple</h2>
+<div class="snippet span-12">
+    <!-- <h2>Tuples</h2> -->
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            Tuples are represented as comma-separated values of any data type within parentheses.
+        </div>
+        <h4>Tuple Creation: 👇</h4>
+        <code>variable_name = &#40;element, element, ....&#41;</code>
+        <p>These elements cab be of different datatypes.</p>
+    </div>
+    </div> 
+
+    <div class="snippet span-12">
+        <h2>Indexing</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                The position of every element placed in the string starts from 0(zero position and step by step it ends at length-1(one) position. <br>
+                Tuples are ordered, indexing, immutable and ost secured collection of elements. <br>
+                Lets talk about some of the tuple methods:
+            </div>
+            <!-- <code>variable_name = &#40;element, element, ....&#41;</code> -->
+        </div>
+        </div>     
+
+        <h2>Tuple Methods</h2>
+        <div class="snippet span-4">
+            <h2>count() method</h2>
+            <div class="codeblock" id="html-elements-nav">
+                <div class="ex-element">
+                    It returns the number of times a specified value occurs in a tuple.
+                </div>
+                <br>
+                <code>tuple.count&#40;value&#41;</code>
+            </div>
+        </div>
+
+        <div class="snippet span-4">
+            <h2>index() method</h2>
+            <div class="codeblock" id="html-elements-nav">
+                <div class="ex-element">
+                    It searches the tuple for a specified value and returns the position.
+                </div>
+                <br>
+                <code>tuple.index&#40;value&#41;</code>
+            </div>
+        </div>
+
+        <h2>Sets</h2>
+        <div class="snippet span-12">
+            <!-- <h2>Sets</h2> -->
+            <div class="codeblock" id="html-elements-nav">
+                <div class="ex-element">
+                    A set is a collection of multiple values which is both unordered and unindexed. It is written in curly brackets.
+                </div>
+                <u><p>Set Creation: Way 1 👇</p></u>
+                <code>var_name = &#123;element, element, ....&#125;</code>
+                <br>
+                <u><p>Set Creation: Way 2 👇</p></u>
+                <code>var_name = &#40;&#91;element, element, ....&#93;&#41;</code>
+                <p>Set is unordered, immutable, non-indexed type of collection. duplicate elements are not allowed in sets.</p>
+            </div>
+            </div>
+        
+            <h2>Set Methods</h2>
+            <div class="snippet span-12">
+                <!-- <h2>Sets</h2> -->
+                <div class="codeblock" id="html-elements-nav">
+                    <div class="ex-element">
+                        Lets talk about some of the methods of sets.
+                    </div>
+                    <!-- <code>var_name = &#123;element, element, ....&#125;</code> -->
+                </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>add() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Adds element to a set.
+                        </div>
+                        <br>
+                        <code>set.add&#40;element&#41;</code>
+                    </div>
+                </div>
+                
+                <div class="snippet span-4">
+                    <h2>clear() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Remove all elements from a set.
+                        </div>
+                        <br>
+                        <code>set.clear&#40;&#41;</code>
+                    </div>
+                </div>
+            
+                <div class="snippet span-4">
+                    <h2>discard() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Remove the specified item from the set.
+                        </div>
+                        <br>
+                        <code>set.discard&#40;value&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>intersection() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Return intersection of two or more sets.
+                        </div>
+                        <br>
+                        <code>set.intersection&#40;set1, set2 ... etc&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>issubset() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Checks if a set is a subset of another set.
+                        </div>
+                        <br>
+                        <code>set.issubset&#40;set&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>pop() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Remove an element from the set.
+                        </div>
+                        <br>
+                        <code>set.pop&#40;&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>remove() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Removes the specified element from the set.
+                        </div>
+                        <br>
+                        <code>set.remove&#40;item&#41;</code>
+                    </div>
+                </div>
+
+                <div class="snippet span-4">
+                    <h2>union() method</h2>
+                    <div class="codeblock" id="html-elements-nav">
+                        <div class="ex-element">
+                            Removes the union of two or more set.
+                        </div>
+                        <br>
+                        <code>set.union&#40;set1, set2....&#41;</code>
+                    </div>
+                </div>
+
+                <!-- set methods end -->
+
+<!-- Start Dictionaries -->
+
+<h2>Dictionaries</h2>
+<div class="snippet span-12">
+    <!-- <h2>Sets</h2> -->
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            The dictionary is an unordered set of comma-separated key:value pairs, within &#123; &#125;, with the requirement that within a dictionary, no two keys can be the same.
+        </div>
+        <!-- <code>var_name = &#40;&#91;element, element, ....&#93;&#41;</code> -->
+    </div>
+    </div>
+
+    <div class="snippet span-6">
+        <h2>Dictionary</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                <code>&lt;dictionary-name&gt; = &#123;&lt;key&gt;: value, &lt;key&gt;: value... &#125;</code>
+            </div>
+            <p>Dictionary is ordered and mutable collection of elements. Dictionary allows duplicate values but not duplicate keys.</p>
+        </div>
+    </div>
+
+    <div class="snippet span-6">
+        <h2>Empty Dictionary</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                By putting two culry braces, you can create a blank dictionary.
+            </div>
+            <code>mydict=&#123;&#125;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-6">
+        <h2>Adding Element to a dictionary</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                By this method, one can new elements to the dictionary.
+            </div>
+            <code>&lt;dictionary&gt;&#91;&lt;key&gt;&#93; = &lt;value&gt;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-6">
+        <h2>Updating Element in a dictionary</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                If a specified key already exists, then its value will get updated.
+            </div>
+            <code>&lt;dictionary&gt;&#91;&lt;key&gt;&#93; = &lt;value&gt;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-6">
+        <h2>Deleting an element from a dictionary</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                del keyword is used to delete a specified key:value pair from the dictionary as follows:
+            </div>
+            <code>del &lt;dictionary&gt;&#91;&lt;key&gt;&#93;</code>
+        </div>
+    </div>
+
+    <!-- End Dictionary -->
+
+    <!-- start dictionary methods -->
+
+    <h2>Dictionary Functions & Methods.</h2>
+    <div class="snippet span-12">
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Below are some of the methods of dictionaries.
+            </div>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>len() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                It returns the length of the dictionary, i.e., the count of elements&#40;key: value pairs&#41; in the dictionary.
+            </div>
+            <code>len&#40;dictionary&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>clear() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Remove all the elements from the dictionary.
+            </div>
+            <code>dictionary.clear&#40;&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>get() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Returns the value of the specified key.
+            </div>
+            <code>dictionary.get&#40;keyname&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>item() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Returns a list containing a tuple for each key-value pair.
+            </div>
+            <code>dictionary.items&#40;&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>keys() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Returns a list containing the dictionary's keys.
+            </div>
+            <code>dictionary.keys&#40;&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>values() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Returns a list of all the values in the dictionary.
+            </div>
+            <code>dictionary.values&#40;&#41;</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>update() method</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Updates the dictionary with the specified key-value pairs.
+            </div>
+            <code>dictionary.update&#40;iterable&#41;</code>
+        </div>
+    </div>
+<!-- end -->
+
+
+<!-- Conditional Statement Start -->
+
+    <h2>Indentation</h2>
+    <div class="snippet span-12">
+        <!-- <h2>update() method</h2> -->
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                In Python, indentation means the code is written with some spaces or tabs into many different blocks of code to indent it so that tha interpreter can easily execute the python code.
+            <br>
+            indentation is applied on conditional statements and loop control statements. indent specifies the block of code that is to be executed depending on the conditions.
+            </div>
+        </div>
+    </div>
+
+    <h2>Conditional Statements</h2>
+    <div class="snippet span-12">
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                The if, elif and else statements are the conditional statements in Python, and these implement selection constructs (decision constructs).
+            </div>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>if Statement</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+            </div>
+            <code>if&#40;conditional expression&#41;:
+        statements</code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>if-else Statement</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+            </div>
+            <code>if&#40;conditional expression&#41;:
+        statements</code>
+        <code>else:
+        statements
+        </code>
+        </div>
+    </div>
+
+    <div class="snippet span-4">
+        <h2>if-elif Statement</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+            </div>
+            <code>if&#40;conditional expression&#41;:
+        statements</code>
+        <code>elif (conditional expression):
+        statements</code>
+        <code>else:
+        statements
+        </code>
+        </div>
+    </div>
+
+
+    <div class="snippet span-4">
+        <h2>Nested if-else Statement</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+            </div>
+            <code>if&#40;conditional expression&#41;:
+        statements</code>
+        <code>
+            if(conditional expression):
+		statements</code>
+        <code>
+            else:
+		statements</code>
+        <code>else:
+        statements</code>
+
+        </div>
+    </div>
+
+
+    <div class="snippet span-8">
+        <h2>Example: 👇</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+            </div>
+            <code>
+a=15
+b=20
+c=12
+
+if(a>b and a>c):
+	print(a, "is greatest")
+elif(b>c and b>a):
+	print(b, "is greatest")
+else:
+	print(c, "is gretest")
+            </code>
+
+        </div>
+    </div>
+
+    <!-- end statement -->
+
+    <!-- start loops -->
+
+    <h2>Loops in Python</h2>
+    <div class="snippet span-12">
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                A loop or iteration statement repeatedly excutes a statement, know as the loop body, until the controlling expression is false (0).
+            </div>
+        </div>
+    </div>
+
+
+    <div class="snippet span-6">
+        <h2>For Loop</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                The for loop of python is designed to process the items of any sequence, such as a list or a string, one by one.
+            </div>
+            <code>
+    for &lt;variable&gt; in &lt;sequence&gt;:
+        statements_to_repeat
+    </code>
+        </div>
+    </div>
+
+    <div class="snippet span-6">
+        <h2>For Loop Example: 👇</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+            </div>
+            <code>
+    for i in range&#40;1,101,1&#41;:
+                print&#40;i&#41;
+    </code>
+        </div>
+    </div>
+
+    <!-- while loop -->
+
+    <div class="snippet span-6">
+        <h2>While Loop</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                A while loop is a conditional loop that will repeat the instructions within itself as long as a conditional remains true.
+            </div>
+            <code>
+    while &lt;logical-expression&gt;:
+        loop-body
+    </code>
+        </div>
+    </div>
+
+    <div class="snippet span-6">
+        <h2>While Loop Example: 👇</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+            </div>
+            <code>
+                i=1
+                while&#40;i&lt;=100&#41;:
+                    print&#40;i&#41;
+                    i=i+1
+    </code>
+        </div>
+    </div>
+
+    <!-- end -->
+
+    <!-- Break Statement -->
+
+    <div class="snippet span-6">
+        <h2>Break Statement</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                The break statement enables a program to skip over a part of the code. A break statement terminates the very loop it lies within.
+            </div>
+            <code>
+    for &lt;var&gt; in &lt;sequence&gt;:
+        statement1
+        if &lt;condition&gt;:
+                break
+        statement2
+    </code>
+    <div class="ex-element">
+    </div>
+    <p>statement_after_loop</p>
+        </div>
+    </div>
+
+    <div class="snippet span-6">
+        <h2>Break Statement Example: 👇</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+            </div>
+            <code>
+                for i in range&#40;,101,1&#41;:
+	            print&#40;i, end=" "&#41;
+	            if&#40;i==50&#41;:
+	                 break
+	            else:
+		        print&#40;"Mississippi"&#41;
+	        print&#40;"Thank You"&#41;
+    </code>
+        </div>
+    </div>
+
+<!-- end -->
+    <!-- Continue Statement start -->
+
+    <div class="snippet span-6">
+        <h2>Continue Statement</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                The Continue statement skips the rest of the loop statements and causes the next iteration to occur.
+            </div>
+            <code>
+    for &lt;var&gt; in &lt;sequence&gt;:
+        statement1
+        if &lt;condition&gt;:
+             continue
+        statement2
+        statement3
+        statement4
+    </code>
+        </div>
+    </div>
+
+    <div class="snippet span-6">
+        <h2>Continue Statement Example: 👇</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+            </div>
+            <code>
+                for i in range&#91;2, 3, 4, 5, 6, 7, 8, 0&#93;:
+                    if&#40;i%2!=0&#41;:
+	                 continue
+		    print&#40;i&#41;
+    </code>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- Functions Start -->
+     <h2>Functions</h2>
+    <div class="snippet span-12">
+        <!-- <h2>Continue Statement</h2> -->
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                A function is a block of code that performs a specific task. You can pass parameters into a function. It helps us to make our code more organized and manageable.
+            </div>
+        </div>
+    </div>
+    
+    <div class="snippet span-6">
+        <h2>Function Definition</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+            </div>
+            <code>
+    def my_function&#40;&#41;:
+        #statements
+    </code>
+    <p>def keyword is used before defining the function.</p>
+        </div>
+    </div>
+
+    <div class="snippet span-6">
+        <h2>Function Call</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+            </div>
+            <code>
+        my_function&#40;&#41;:
+    </code>
+    <p>Whenever we need that block of code n our program simply call that function name whenever needed. If parameters are passed during defing the function we have to pass the parameters while calling that function.</p>
+</div>
+    </div>
+
+    <div class="snippet span-12">
+        <h2>Function call Example: 👇</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+            </div>
+            <code>
+            def add&#40;&#41;:     #function definition
+                a=10
+                b=20
+                print&#40;a+b&#41;
+            add&#40;&#41; 	      #function call            
+    </code>
+        </div>
+    </div>
+
+    <div class="snippet span-6">
+        <h2>Return statement in python function</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                The function return statement return the specified value or data item to the caller.
+            </div>
+            <code>
+                return &#91;value/expression&#93;
+    </code>
+        </div>
+    </div>
+
+    <div class="snippet span-6">
+        <h2>Arguments in python function</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+                Arguments are the values passed inside the parenthesis of the function while defining as well as while calling.
+            </div>
+            <code>
+                def my_function&#40;arg1, arg2, arg3,....argn&#41;:
+		            #statements
+                my_function&#40;arg1, arg2, arg3....argn&#41;
+    </code>
+        </div>
+    </div>
+
+    <div class="snippet span-6">
+        <h2>Arguments in python function Example 👇</h2>
+        <div class="codeblock" id="html-elements-nav">
+            <div class="ex-element">
+            </div>
+            <code>
+    def add&#40;a,b&#41;:
+        return a+b
+x=add&#40;1,2&#41;
+print&#40;x&#41;
+    </code>
+    <br> #Output: 3
+        </div>
+    </div>
+
+    <!-- end -->
+
+<!-- Start File Handling -->
+<h2>File Handing</h2>
+<div class="snippet span-12">
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            File handling refers to reading or writing data from files. Python provides some functions that allow us to manipulate data in the files.
+        </div>        
+    </div>
+</div>
+
+<h2>File () Functions 👇</h2>
+<div class="snippet span-4">
+    <h2>open() function</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+        </div>        
+        <code>var_name = open&#40;"filename", " mode"&#41;</code>
+    </div>
+</div>
+
+<div class="snippet span-8">
+    <h2>Modes 👇</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+        </div>        
+    <ol>
+        <li>r - to read the content from file.</li>
+        <li>w - to write the content into file.</li>
+        <li>a - to append the existing content into file.</li>
+        <li>r+: To read and write data into the file. the previous in the file will be overridden.</li>
+        <li>w+: TO write and read data. It will override existing data.</li>
+        <li>a+ To append and read data from the file. It won't override existing data.</li>
+    </ol>
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>close() function</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+        </div>        
+        <code>var_name.close&#40;&#41;</code>
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>read() function</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            The read functions contains different methods, read(), readline() and readlines().
+        </div>        
+        <code>read&#40;&#41; #return one big string.</code> 
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>readlines() function</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            It returns a list of lines.
+        </div>        
+        <code>readlines&#40;&#41; #return a list.</code> 
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>readline() function</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            It returns a list at a time.
+        </div>        
+        <code>readline&#40;&#41; #returns one line at a time.</code> 
+    </div>
+</div>
+
+<h2>Write Functions</h2>
+<div class="snippet span-6">
+    <h2>write() function</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            This function writes a sequence of the file.
+        </div>        
+        <code>write&#40;&#41; #Used to write a fixed sequence of characters to a file</code>
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>writelines() function</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            It is used to write a list of strings.
+        </div>        
+        <code>writelines&#40;&#41;</code>
+    </div>
+</div>
+
+<!-- end  -->
+<!-- start exception try and except -->
+<div class="snippet span-12">
+    <h2>Exception Handling</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            An exception is an unusual condition that results in an interruption in the flow of a program.
+        </div>        
+        <!-- <code>writelines&#40;&#41;</code> -->
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>try and except</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            A basic try-catch block in python. when the try block throws an error, the control goes to the except block.
+        </div>        
+        <!-- <code>writelines&#40;&#41;</code> -->
+        <code>
+        try:
+            &#91;statement body block&#93;
+            raise exception&#40;&#41;
+        except exceptionname:
+            &#91;error processing block&#93;
+
+        </code>
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>else</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            The else block is executed if the try block have not raise any exception and code had been running successfully.
+        </div>        
+        <!-- <code>writelines&#40;&#41;</code> -->
+        <code>
+        try:
+            #statements
+        except:
+            #statements
+        else:
+            #statements
+        </code>
+    </div>
+</div>
+
+<div class="snippet span-12">
+    <h2>finally</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            Finally block will be executed even if try block of code has been running successfully of except block of code is been executed. finally block of code will be executed compulsory.
+        </div>        
+    </div>
+</div>
+<!-- end -->
+
+<!-- start oops -->
+
+<h2>Object Oriented Programming (OOPS)</h2>
+<div class="snippet span-12">
+    <!-- <h2>else</h2> -->
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            It is a programming approach that primarily focuses in using objects and classes. the objects can be any real-world entities.
+        </div>        
+        <!-- <code>writelines&#40;&#41;</code> -->
+    </div>
+</div>
+
+
+<div class="snippet span-6">
+    <h2>class</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            The syntax for writing a class in python.
+        </div>        
+        <!-- <code>writelines&#40;&#41;</code> -->
+        <code>
+        class class_name:
+            pass #statements
+        </code>
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>Creating an object</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            Instantiating an object can be done as follows:
+        </div>        
+        <!-- <code>writelines&#40;&#41;</code> -->
+        <code>
+            &lt;object-name&gt; = &lt;class-name&gt;&#40;&lt;arguments&gt;&#41;
+        </code>
+    </div>
+</div>
+
+<!-- end oops -->
+
+<div class="snippet span-12">
+    <h2>Self Parameter</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            The self parameter is the first parameter of any function present in the class. It can be of different name but this parameter is must while defining any function into class as it is used to access other data members of the class.
+        </div>        
+        <!-- <code>writelines&#40;&#41;</code> -->
+    </div>
+</div>
+
+<div class="snippet span-12">
+    <h2>Class with a Constructs</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            Constructor is the special function of the class which is used to initialize the objects. The syntax for writing a class with the constructor in python
+        </div>        
+        <!-- <code>writelines&#40;&#41;</code> -->
+         <code>
+
+class code_by_teju:
+	
+	# Default constructor
+	def__init__&#40;self&#41;:
+		self.name = "code_by_teju"
+
+	# A method for printing data members
+	def print_me&#40;self&#41;:
+		print&#40;self.name&#41;
+         </code>
+    </div>
+</div>
+
+<!-- Inheritance in python start -->
+
+<h2>Inheritance in python</h2>
+<div class="snippet span-12">
+    <!-- <h2>Class with a Constructs</h2> -->
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            By using inheritance, we can create a class which uses all the properties and behavior of another class. The new class is known as a derived class or child class, and the one whose properties are acquired is known as a base class or parent class.<br>It provides the re-usability of the code.
+        </div>        
+        <!-- <code>writelines&#40;&#41;</code> -->
+         <code>
+class base_class:
+	pass
+class derived_class&#40;base_class&#41;:
+	pass
+         </code>
+    </div>
+</div>
+
+<div class="snippet span-12">
+    <h2>Types of inheritance- 👇</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            <ul>
+                <li>Single inheritance</li>
+                <li>Multiple inheritance</li>
+                <li>Multilevel inheritance</li>
+                <li>Hierarchical inheritance</li>
+            </ul>
+        </div>        
+        <!-- <code>writelines&#40;&#41;</code> -->
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>filter() function</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            The filter function allows you to process an iterable and extract those items that satisfy a given condition.
+        </div>        
+        <code>filter&#40;function, iterable&#41;</code>
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>issubclass() function</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            Used to find whether a class is a subclass of a given class or not as follows.
+        </div>        
+        <code>issubclass&#40;obj, classinfo&#41; #returns true if obj is a subclass of classinfo.</code>
+    </div>
+</div>
+
+<!-- end -->
+
+<!-- start Iterators and Generators -->
+<h2>Iterators and Generators</h2>
+<div class="snippet span-12">
+    <!-- <h2>issubclass() function</h2> -->
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            Here are some of the advanced topics of the python programming language like iterators and generators.
+        </div>        
+        <!-- <code>issubclass&#40;obj, classinfo&#41; #returns true if obj is a subclass of classinfo.</code> -->
+    </div>
+</div>
+
+<h2>Iterators and Generators</h2>
+<div class="snippet span-12">
+    <!-- <h2>Iterator</h2> -->
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            Here are some of the advanced topics of the python programming language like iterators and generators.
+        </div>        
+        <!-- <code>issubclass&#40;obj, classinfo&#41; #returns true if obj is a subclass of classinfo.</code> -->
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>Iterator</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            Used to create an iterator over an iterable.
+        </div>        
+        <!-- <code>issubclass&#40;obj, classinfo&#41; #returns true if obj is a subclass of classinfo.</code> -->
+         <code>
+
+
+iter_list  iter&#40;&#91;'Teju', 'Gaurav', 'Shubham', 'Sachin'&#93;&#41;
+print&#40;next&#40;iter_list&#41;&#41;
+print&#40;next&#40;iter_list&#41;&#41;
+print&#40;next&#40;iter_list&#41;&#41;
+print&#40;next&#40;iter_list&#41;&#41;    
+
+
+
+
+
+         </code>
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>Generator</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            Used to generate values on the fly.
+        </div>        
+        <!-- <code>issubclass&#40;obj, classinfo&#41; #returns true if obj is a subclass of classinfo.</code> -->
+         <code>
+# A simple generator function
+
+def my_gen&#40;&#41;:
+    n=1
+    print&#40;'this is printed first'&#41;
+
+    # generator function contains yield statements
+
+    yield n
+    n += 1
+    print&#40;'This is printed at last'&#41;
+    yield n
+         </code>
+    </div>
+</div>
+<!-- end -->
+
+<!-- Start Decorators -->
+
+<h2>Decorators</h2>
+<div class="snippet span-12">
+    <!-- <h2></h2> -->
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            Decorators are used to modifying the behavior of a function or a class. they are usually called before the definition of a function you want to decorate.
+        </div>        
+        <!-- <code>issubclass&#40;obj, classinfo&#41; #returns true if obj is a subclass of classinfo.</code> -->
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>Property Decorator (getter)</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+        </div>        
+        <!-- <code>issubclass&#40;obj, classinfo&#41; #returns true if obj is a subclass of classinfo.</code> -->
+         <code>
+@property
+def name&#40;self&#41;:
+    return self._name   
+
+         </code>
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>setter Decorator</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            It is to set the property 'name'
+        </div>        
+         <code>
+@property
+def name&#40;self,name&#41;:
+    self._name = value      
+         </code>
+    </div>
+</div>
+
+<div class="snippet span-6">
+    <h2>delete Decorator</h2>
+    <div class="codeblock" id="html-elements-nav">
+        <div class="ex-element">
+            It id used to delete the property 'name'
+        </div>        
+         <code>
+@name.deleter #property-name.deleter decorator
+def name&#40;self, value&#41;:
+	print&#40;'Deleting..'&#41;
+	del self._name         
+</code>
+    </div>
+</div>
+<!-- end -->
+
+
+        </section>
+    </section>
+</body>
+<p style="text-align: center;">© All Copyright 2024 by <a href="https://www.instagram.com/coding_by_teju?igsh=MWFrNjRiZTd6MmZzbg==">coding_by_teju</a></p>
+</html>

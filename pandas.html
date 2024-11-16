@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Python Pandas library</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+</head>
+
+<!-- div.section>h2+div.snippet>h2+div.codeblock>div.ex+code -->
+
+<body>
+    <nav>
+        <ul class="left">
+
+            <li>
+                <a href="index.html">Python-🐍</a>
+            </li>
+
+            <li>
+                <a href="numpy.html">NumPy-📚</a>
+            </li>
+            
+            <li>
+                <a href="pandas.html">Pandas-📚</a>
+            </li>
+
+        </ul>
+        <ul class="right">
+            <li>
+                <a href="https://tejendraupreti.github.io/codingbyteju-html-css-sheet.github.io/" target="_blank" rel="noopener noreferrer">
+                    <img class="social-logo" src="github.svg">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="size-boxes">
+        <div class="size-box box-1">100px</div>
+        <div class="size-box box-2">100px</div>
+        <div class="size-box box-3">100px</div>
+        <div class="size-box box-4">100px</div>
+        <div class="size-box box-5">100px</div>
+        <div class="size-box box-6">100px</div>
+        <div class="size-box box-7">100px</div>
+        <div class="size-box box-8">100px</div>
+        <div class="size-box box-9">100px</div>
+        <div class="size-box box-10">100px</div>
+        <div class="size-box box-11">100px</div>
+        <div class="size-box box-12">100px</div>
+        <div class="size-box box-13">100px</div>
+        <div class="size-box box-14">100px</div>
+        <div class="size-box box-15">100px</div>
+        <div class="size-box box-16">100px</div>
+        <div class="size-box box-17">100px</div>
+        <div class="size-box box-18">100px</div>
+        <div class="size-box box-19">100px</div>
+        <div class="size-box box-20">100px</div>
+        <div class="size-box box-21">100px</div>
+        <div class="size-box box-22">100px</div>
+        <div class="size-box box-23">100px</div>
+        <div class="size-box box-24">100px</div>
+    </div>
+
+    <section id="html">
+        <h1>Python Pandas library</h1>
+        <section id="html-templates">
+            
+            <h2>Pandas Basics</h2>
+            <div class="snippet span-12">
+                <!-- <h2>Python is Programming language.</h2> -->
+                <div class="codeblock">
+                    <p>The <b>Pandas</b> library is built on NumPy and provides easy-to-use
+                        <b>data structures</b> and <b>data analysis</b> tools for the Python
+                        programming language.</p>
+                </div>
+            </div>
+
+            <!-- <h2>Showing Output To User</h2> -->
+            <div class="snippet span-12">
+                <h2>Use the following import convention:</h2>
+                <div class="codeblock">
+                    <code>>>> import pandas as pd</code>
+                </div>
+            </div>
+
+            <h2>Pandas Data Structures</h2>
+            <div class="snippet span-12">
+                <h2>Series</h2>
+                <div class="codeblock">
+                    <p>A <b>one dimensional</b> labeled array capable of holding any data type.</p>
+                    <code>>>> s = pd.Series([3, -5, 7, 4], index=['a', 'b', 'c', 'd'])</code>
+                    <p><img src="img-pandas/index.png" alt="#"></p>
+                </div>
+            </div>
+
+            <div class="snippet span-12">
+                <h2>Dataframe 🛜</h2>
+                <div class="codeblock">
+                    <p>A <b>two dimensional</b> labeled data structure with columns of potentially different types.</p>
+                    <p><img src="img-pandas/dataframe.png" alt="#"></p>
+                    <code>
+    >>> data = {'Country': ['Belgium', 'India', 'Brazil'],
+                'Capital': ['Brussels', 'New Delhi', 'Brasília'],
+                'Population': [11190846, 1303171035, 207847528]}
+                       </code>
+                       <code>
+    >>> df = pd.DataFrame(data,
+                columns=['Country' ,'Capital' , 'Population'])</code>
+                </div>
+            </div>
+
+
+<!-- start Dropping -->
+
+
+<h2>Dropping 🚚</h2>
+            <div class="snippet span-12">
+                <!-- <h2>Series</h2> -->
+                <div class="codeblock">
+                    <code>
+    >>> s.drop(['a' , 'b']) #Drop values from rows (axis=0)
+
+    >>>  df.drop( , axis=1) #Drop values from columns(axis=1)
+                    </code>
+                </div>
+            </div>
+
+ <!-- end Dropping -->
+
+ <!-- Help -->
+ <h2>Asking For Help 💁‍♂️</h2>
+ <div class="snippet span-12">
+     <!-- <h2>Series</h2> -->
+     <div class="codeblock">
+         <code>
+>>> help(pd.Series.loc)
+         </code>
+     </div>
+ </div>
+  <!-- end Help -->
+
+  <!-- start Sort & Rank -->
+
+  <h2>Sort & Rank</h2>
+ <div class="snippet span-12">
+     <!-- <h2>Series</h2> -->
+     <div class="codeblock">
+         <code>
+>>> df.sort_index() #Sort by labels along an axis.
+
+>>> df.sort_values(by='Country') #Sort by the values along an axis.
+
+>>> df.rank() #Assign ranks to entries.
+         </code>
+     </div>
+ </div>
+
+   <!-- end Sort & Rank -->
+
+   <!-- start I/O -->
+   <h2>I/O</h2>
+   <div class="snippet span-12">
+       <h2>Read and Write to CSV</h2>
+       <div class="codeblock">
+           <code>
+  >>> pd.read_csv( , header=None, nrows=5)
+
+  >>> df.to_csv ('myDataFrame.csv')
+           </code>
+       </div>
+   </div>
+
+
+   <div class="snippet span-12">
+       <h2>Read and Write to Excel</h2>
+       <div class="codeblock">
+           <code>
+  >>> pd.read_excel('file.xlsx')
+  
+  >>> df.to_excel('dir/myDataFrame.xlsx' , sheet_name= 'Sheet1')
+           </code>
+       </div>
+   </div>
+
+   <div class="snippet span-12">
+    <h2>Read multiple sheets from the same file</h2>
+    <div class="codeblock">
+        <code>
+>>> xlsx = pd.ExcelFile('file.xls')
+
+>>> df = pd.read_excel(xlsx, 'Sheet1')
+        </code>
+    </div>
+</div>
+
+<div class="snippet span-12">
+    <h2>Read and Write to SQL Query or Database Table</h2>
+    <div class="codeblock">
+        <code>
+>>> from sqlalchemy import create_engine
+
+>>> engine = create_engine('sqlite:///:memory:')
+
+>>> pd.read_sql("SELECT * FROM my_table;", engine)
+
+>>> pd.read_sql_table('my_table', engine)
+
+>>> pd.read_sql_query("SELECT * FROM my_table;", engine)
+
+read_sql() <b>is a convenience wrapper around</b> read_sql_table() <b>and</b> read_sql_query()
+>>> df.to_sql( , en 'myDf' gine)
+        </code>
+    </div>
+</div>
+    <!-- end I/O -->
+
+    <!-- start Selection, Boolean Indexing & Setting -->
+
+    <h2>Selection & Also see NumPy Arrays</h2>
+    <div class="snippet span-12">
+        <h2>Getting</h2>
+        <div class="codeblock">
+            <code>
+    >>> s['b'] #Get one element.
+    -5
+
+    >>> df[1:] #Get subset of a DataFrame.
+            </code>
+    <p><img src="img-pandas/dataframe3.png" alt="#"></p>
+        </div>
+    </div>
+
+
+    <div class="snippet span-12">
+        <h2>Selecting, Boolean Indexing & Setting</h2>
+        <div class="codeblock">
+            <h2>By Position</h2>
+            <code>
+    >>> df.iloc[[0],[0]] #Select single value by row & column.
+        'Belgium'
+    
+    >>> df.iat([0],[0])
+        'Belgium'
+            </code>
+        <h2>By Label</h2>    
+        <code>
+    >>> df.loc[[0], ['Country']] #Select single value by row & column labels.
+        'Belgium'
+    
+    >>> df.at([0], ['Country'])
+        'Belgium'
+        </code>
+
+        <h2>By Label/Position</h2>    
+        <code>
+    >>> df.ix[2] #Select single row of subset of rows.
+        Country Brazil
+        Capital Brasília
+        Population 207847528
+
+    >>> df.ix[:, 'Country'] #elect a single column of subset of columns.
+        0 Brussels
+        1 New Delhi
+        2 Brasília
+
+    >>> df.ix[1, 'Capital']  #Select rows and columns.
+        'New Delhi'
+        </code>   
+        
+        <h2>Boolean Indexing</h2>
+        <code>
+    >>> s[~(s > 1)] #Series s where value is not >1.
+
+    >>> s[(s < -1) | (s > 2)] #s where value is <- 1 or >2
+
+    >>> df[df['Population']>1200000000] #Use filter to adjust DataFrame.
+        </code>
+    
+        <h2>Setting</h2>
+        <code>
+    >>> s['a'] = 'a' 6 #Set index a of Series s to 6.
+        </code>
+        </div>
+    </div>
+
+    <!-- end Selection,Boolean Indexing & Setting -->
+
+    <!-- start Retrieving Series/DataFrame Information -->
+
+    <h2>Retrieving Series/DataFrame Information</h2>
+    <div class="snippet span-12">
+        <h2>Basic Information</h2>
+        <div class="codeblock">
+            <code>
+    >>> df.shape #(rows,columns).
+
+    >>> df.index #Describe index.
+
+    >>> df.columns #Describe DataFrame columns.
+
+    >>> df.info() #Info on DataFrame.
+
+    >>> df.count() #Number of non-NA values.
+            </code>
+        </div>
+    </div>
+
+
+    <div class="snippet span-12">
+        <h2>Summary</h2>
+        <div class="codeblock">
+            <code>
+    >>>  df.sum() #Sum of values.
+
+    >>> df.cumsum() #Cummulative sum of values.
+
+    >>> df.min()/df.max() #Minimum/maximum values.
+
+    >>> df.idxmin()/df.idxmax() #Minimum/Maximum index value.
+
+    >>> df.describe() #Summary statistics.
+
+    >>> df.mean() #Menu of values.
+
+    >>> df.median() #Median of values.
+
+            </code>
+        </div>
+    </div>
+
+ <!-- end Retrieving Series/DataFrame Information -->
+
+
+ <!--start Applying Functions -->
+
+ <h2>Applying Functions</h2>
+ <div class="snippet span-12">
+    <div class="codeblock">
+        <code>
+>>>  f = lambda x: x*2 
+
+>>>  df.apply(f)  #Apply Functions.
+
+>>> df.applymap(f) #Apply function element wise.
+
+        </code>
+    </div>
+</div>
+
+ <!-- end Applying funcations -->
+
+
+<!-- Start Data Alignment  -->
+<h2>Data Alignment</h2>
+<div class="snippet span-12">
+    <h2>Internal Data Alignment</h2>
+   <div class="codeblock">
+    <h2>NA values are introduced in the indices that don t overlap:</h2>
+       <code>
+>>>  s3 = pd.Series([7, -2, 3], index=['a', 'b', 'c'])
+>>>  s + s3
+
+a 10.0
+b NaN
+c 5.0
+d 7.0
+       </code>
+   </div>
+</div>
+
+
+<div class="snippet span-12">
+    <h2>Arithmetic Operations with Fill Methods</h2>
+   <div class="codeblock">
+    <h2>You can also do the internal data alignment yourself with the help of the fill methods:</h2>
+       <code>
+>>>  s.add(s3, fill_values=0)
+
+a 10.0
+b -5.0
+c 5.0
+d 7.0
+
+>>> s.sub(s3, fill_value=2)
+>>> s.div(s3, fill_value=4)
+>>> s.mul(s3, fill_value=3)
+       </code>
+   </div>
+</div>
+
+ <!-- end Data alignment -->
+    
+ <!--  end code-->
+
+
+        </section>
+    </section>
+</body>
+<p style="text-align: center;">© All Copyright 2024 by <a href="https://www.instagram.com/coding_by_teju?igsh=MWFrNjRiZTd6MmZzbg==">coding_by_teju</a></p>
+</html>

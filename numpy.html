@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Python Numpy library</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+</head>
+
+<!-- div.section>h2+div.snippet>h2+div.codeblock>div.ex+code -->
+
+<body>
+    <nav>
+        <ul class="left">
+            <!-- <li>
+                <a href="index.html#html">HTML</a>
+            </li>
+
+            <li>
+                <a href="index.html#css">CSS</a>
+            </li>
+
+            <li>
+                <a href="animation.html#animation">Animation</a>
+            </li>
+
+            <li>
+                <a href="tools.html">Tools</a>
+            </li> -->
+
+            <li>
+                <a href="index.html">Python-🐍</a>
+            </li>
+
+            <li>
+                <a href="numpy.html">NumPy-📚</a>
+            </li>
+            
+            <li>
+                <a href="pandas.html">Pandas-📚</a>
+            </li>
+         
+            <!-- <li>
+                <a href="java.html">Java</a>
+            </li> -->
+
+        </ul>
+        <ul class="right">
+            <li>
+                <a href="https://tejendraupreti.github.io/codingbyteju-html-css-sheet.github.io/" target="_blank" rel="noopener noreferrer">
+                    <img class="social-logo" src="github.svg">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="size-boxes">
+        <div class="size-box box-1">100px</div>
+        <div class="size-box box-2">100px</div>
+        <div class="size-box box-3">100px</div>
+        <div class="size-box box-4">100px</div>
+        <div class="size-box box-5">100px</div>
+        <div class="size-box box-6">100px</div>
+        <div class="size-box box-7">100px</div>
+        <div class="size-box box-8">100px</div>
+        <div class="size-box box-9">100px</div>
+        <div class="size-box box-10">100px</div>
+        <div class="size-box box-11">100px</div>
+        <div class="size-box box-12">100px</div>
+        <div class="size-box box-13">100px</div>
+        <div class="size-box box-14">100px</div>
+        <div class="size-box box-15">100px</div>
+        <div class="size-box box-16">100px</div>
+        <div class="size-box box-17">100px</div>
+        <div class="size-box box-18">100px</div>
+        <div class="size-box box-19">100px</div>
+        <div class="size-box box-20">100px</div>
+        <div class="size-box box-21">100px</div>
+        <div class="size-box box-22">100px</div>
+        <div class="size-box box-23">100px</div>
+        <div class="size-box box-24">100px</div>
+    </div>
+
+    <section id="html">
+        <h1>Python  NumPy library</h1>
+        <section id="html-templates">
+            
+            <h2>NumPy Basics</h2>
+            <div class="snippet span-12">
+                <!-- <h2>Python is Programming language.</h2> -->
+                <div class="codeblock">
+                    <p>The NumPy library is the core library for scientific computing in 
+                        Python. It provides a high-performance multidimensional array 
+                        object, and tools for working with these arrays.</p> or 
+                        <p>It is one of the most important foundational 
+                            packages for numerical computing & data 
+                            analysis in Python. Most computational 
+                            packages providing scientific functionality use 
+                            NumPy’s array objects as the lingua franca for 
+                            data exchange.</p>
+                </div>
+            </div>
+
+            <!-- <h2>Showing Output To User</h2> -->
+            <div class="snippet span-12">
+                <h2>Use the following import convention:</h2>
+                <div class="codeblock">
+                    <code>>>> import numpy as np</code>
+                </div>
+            </div>
+
+            <!-- <h2>Showing Output To User</h2> -->
+            <div class="snippet span-12">
+                <h2>Types of Numpy Array</h2>
+                <div class="codeblock">
+                    <!-- <code>Basic Syntax from the python programming language.</code> -->
+                    <p style="height: 5%;"><img src="arraytypes.png" alt=""></p>
+
+                </div>
+            </div>
+
+            <!-- <h2>Creating Arrays Commands</h2>
+            <div class="snippet span-12">
+                <h2>One Dimensional Array</h2>
+                <div class="codeblock">
+<code>>>> a = np.array([1,2,3])</code> <br>
+<code>>>> b = np.array([(1.5,2,3), (4,5,6)], dtype = float)</code> <br>
+<code>>>> c = np.array([[(1.5,2,3), (4,5,6)], [(3,2,1), (4,5,6)]],dtype = float)</code>
+                    
+                </div>
+            </div> -->
+
+            <h2>Creating Arrays Commands</h2>
+            <div class="snippet span-12">
+                <h2>One Dimensional Array</h2>
+                <div class="codeblock">
+                    <!-- <p>These are the data types of fixed size.</p> -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Meaning</th>
+                                <th>Explenation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>From Python List</td>
+                                <td>np.array([1, 2, 3, 4, 5])</td>
+                            </tr>
+
+                            <tr>
+                                <td>From Python Tuple</td>
+                                <td>np.array((1, 2, 3, 4, 5))</td>
+                            </tr>
+
+                            <tr>
+                                <td>fromiter() function</td>
+                                <td>np.fromiter((a for a in range(8)), float)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><u>Example</u>👇</p>
+                    <li>Create a NumPy array from a list.</li>
+                    <code>
+    li = [1, 2, 3, 4] 
+    print(np.array(li))
+                    </code>
+                    <li>Create a NumPy array from a tuple.</li>
+                    <code>
+    tup = (5, 6, 7, 8)
+    print(np.array(tup))
+                    </code>
+                    <li>Create a NumPy array using fromiter().</li>
+                    <code>
+    iterable = (a for a in range(8))
+    print(np.fromiter(iterable, float))                        
+                    </code>
+                </div>
+            </div>  
+
+
+            <h2>Multi-Dimensional Array</h2>
+            <div class="snippet span-12">
+                <!-- <h2>One Dimensional Array</h2> -->
+                <div class="codeblock">
+                    <!-- <p>These are the data types of fixed size.</p> -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Meaning</th>
+                                <th>Explenation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Using Python Lists</td>
+                                <td>np.array([[1, 2, 3, 4],[5, 6,7, 8], [9, 10, 11, 12]])</td>
+                            </tr>
+                            <tr>
+                                <td>Using empty()</td>
+                                <td>np.empty([4, 3], dtype=int)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p><u>Example</u>👇</p>
+                    <li>Create a NumPy array from a list.</li>
+                    <code>
+    list_1 = [1, 2, 3, 4]
+    list_2 = [5, 6, 7, 8]
+    list_3 = [9, 10, 11, 12]
+    print(np.array([list_1, list_2, list_3]))
+                    </code>
+                    <li>Create a NumPy array using numpy.empty().</li>
+                    <code>
+    print(np.empty([4, 3], dtype=int))                        
+                    </code>
+                </div>
+            </div>            
+            
+            <h2>Initial Placeholders</h2>
+            <div class="snippet span-12">
+                <h2>One Dimensional Array</h2>
+                <div class="codeblock">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Meaning</th>
+                                <th>Explenation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>arange()</td>
+                                <td>np.arange(1, 10)</td>
+                            </tr>
+                            <tr>
+                                <td>linespace()</td>
+                                <td>np.linspace(1, 10, 3)</td>
+                            </tr>
+                            <tr>
+                                <td>zeros()</td>
+                                <td>np.zeros(5, dtype=int)</td>
+                            </tr>
+                            <tr>
+                                <td>ones()</td>
+                                <td>np.ones(5, dtype=int)</td>
+                            </tr>
+                            <tr>
+                                <td>random.rand()</td>
+                                <td>np.random.rand(5)</td>
+                            </tr>
+                            <tr>
+                                <td>random.randint()</td>
+                                <td>np.random.randint(5, size=10)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><u>Example</u>👇</p>
+                    <li>Create a NumPy array using numpy.arange().</li>
+                    <code>
+    print(np.arange(1, 10))
+                    </code>
+                    <li>Create a NumPy array using numpy.linspace().</li>
+                    <code>
+    print(np.linspace(1, 10, 3))                        
+                    </code>
+                    <li>Create a NumPy array using numpy.zeros().</li>
+                    <code>
+    print(np.zeros(5, dtype=int))
+                    </code>
+                    <li>Create a NumPy array using numpy.ones().</li>
+                    <code>
+    print(np.ones(5, dtype=int))
+                    </code>
+                    <li>Create a NumPy array using numpy.random.rand().</li>
+                    <code>
+    print(np.random.rand(5))
+                    </code>
+                    <li>Create a NumPy array using numpy.random.randint().</li>
+                    <code>
+    print(np.random.randint(5, size=10))
+                    </code>
+                </div>           
+            </div>
+<!-- end Initial Placeholders -->
+
+
+<!-- start N-dimensional Numpy Arrays -->
+
+<h2>N-dimensional Numpy Arrays</h2>
+            <div class="snippet span-12">
+                <!-- <h2>One Dimensional Array</h2> -->
+                <div class="codeblock">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Meaning</th>
+                                <th>Explenation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>zeros()</td>
+                                <td>np.zeros([4, 3], dtype = np.int32)</td>
+                            </tr>
+                            <tr>
+                                <td>ones()</td>
+                                <td>np.ones([4, 3], dtype = np.int32)</td>
+                            </tr>
+                            <tr>
+                                <td>full()</td>
+                                <td>np.full([2, 2], 67, dtype = int)</td>
+                            </tr>
+                            <tr>
+                                <td>eye()</td>
+                                <td>np.eye(4)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><u>Example</u>👇</p>
+                    <li>Create a NumPy array using numpy.zeros().</li>
+                    <code>
+    print(np.arange(1, 10))
+                    </code>
+                    <li>Create a NumPy array using numpy.ones().</li>
+                    <code>
+    print(np.ones([4, 3], dtype = np.int32))                        
+                    </code>
+                    <li>Create a NumPy array using numpy.full().</li>
+                    <code>
+    print(np.full([2, 2], 67, dtype = int))
+                    </code>
+                    <li>Create a NumPy array using numpy.eye().</li>
+                    <code>
+    print(np.eye(4))
+                    </code>
+    
+                </div>           
+            </div>
+
+
+ <!-- end N-dimensional Numpy Arrays -->
+
+
+<!-- Start Inspecting Properties -->
+
+<!-- <h2>N-dimensional Numpy Arrays</h2> -->
+            <div class="snippet span-12">
+                <h2>Inspecting Properties</h2>
+                <div class="codeblock">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Meaning</th>
+                                <th>Explenation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Size</td>
+                                <td>arr.size</td>
+                            </tr>
+                            <tr>
+                                <td>Length</td>
+                                <td>len(arr)</td>
+                            </tr>
+                            <tr>
+                                <td>Shape</td>
+                                <td>arr.shape</td>
+                            </tr>
+                            <tr>
+                                <td>Datatype</td>
+                                <td>arr.dtype</td>
+                            </tr>
+                            <tr>
+                                <td>Changing Datatype of Array</td>
+                                <td>arr.astype('float64')</td>
+                            </tr>
+                            <tr>
+                                <td>Converting Array to List</td>
+                                <td>arr.tolist()</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+
+ <!-- End Inspecting Properties -->
+
+<!-- Start Saving and Loading File -->
+
+ <div class="snippet span-12">
+    <h2>Saving and Loading File</h2>
+    <div class="codeblock">
+        <table>
+            <thead>
+                <tr>
+                    <th>Meaning</th>
+                    <th>Explenation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Saving array on disk</td>
+                    <td>np.save("file", np.arange(5))</td>
+                </tr>
+                <tr>
+                    <td>Loading a file</td>
+                    <td>np.load("file.npy")</td>
+                </tr>
+                <tr>
+                    <td>Importing a Text File</td>
+                    <td>np.loadtxt('file.txt')</td>
+                </tr>
+                <tr>
+                    <td>Importing CSV File</td>
+                    <td>np.genfromtxt('file.csv' delimiter=',')</td>
+                </tr>
+                <tr>
+                    <td>Write Text File</td>
+                    <td>np.savetxt('file.txt',arr delimiter=' ')</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <!-- end Saving and Loading File -->
+
+    <!-- start datatype -->
+
+    <div class="snippet span-12">
+        <h2>Data Types</h2>
+        <div class="codeblock">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Meaning</th>
+                        <th>Explenation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Signed 64-bit integer types</td>
+                        <td>np.int64</td>
+                    </tr>
+                    <tr>
+                        <td>Standard double-precision floating point</td>
+                        <td>np.float32</td>
+                    </tr>
+                    <tr>
+                        <td>Complex numbers represented by 128 floats</td>
+                        <td>np.complex</td>
+                    </tr>
+                    <tr>
+                        <td>Boolean type storing TRUE & FALSE values</td>
+                        <td>np.bool</td>
+                    </tr>
+                    <tr>
+                        <td>Python object type</td>
+                        <td>np.object</td>
+                    </tr>
+                    <tr>
+                        <td>Fixed-length string type</td>
+                        <td>np.string_</td>
+                    </tr>
+                    <tr>
+                        <td>Fixed-length unicode type</td>
+                        <td>np.unicode_</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+     <!-- end datatype -->
+
+<!-- Start Sorting array-->
+<div class="snippet span-12">
+    <h2>Sorting Array</h2>
+    <div class="codeblock">
+        <table>
+            <thead>
+                <tr>
+                    <th>Meaning</th>
+                    <th>Explenation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sorting 1D Array</td>
+                    <td>arr.sort()</td>
+                </tr>
+                <tr>
+                    <td>Sorting along the first axis of the 2D array</td>
+                    <td>np.sort(a, axis = 0)</td>
+                </tr>
+
+            </tbody>
+        </table>
+        </div>
+    </div>
+<!-- End sorting array -->
+
+<!-- Start NumPy Array Manipulation -->
+
+<h2>NumPy Array Manipulation</h2>
+<div class="snippet span-12">
+    <h2>Appending Elements to Array</h2>
+    <div class="codeblock">
+        <h2>One-Dimensional array</h2>
+        <p>Adding the values at the end.</p>
+        <table>
+            <thead>
+                <!-- <tr>
+                    <th>Meaning</th>
+                    <th>Explenation</th>
+                </tr> -->
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>Signed 64-bit integer types</td>
+                    <td>np.int64</td>
+                </tr>
+                <tr>
+                    <td>Standard double-precision floating point</td>
+                    <td>np.float32</td>
+                </tr>
+                <tr>
+                    <td>Complex numbers represented by 128 floats</td>
+                    <td>np.complex</td>
+                </tr>
+                <tr>
+                    <td>Boolean type storing TRUE & FALSE values</td>
+                    <td>np.bool</td>
+                </tr>
+                <tr>
+                    <td>Python object type</td>
+                    <td>np.object</td>
+                </tr>
+                <tr>
+                    <td>Fixed-length string type</td>
+                    <td>np.string_</td>
+                </tr>
+                <tr>
+                    <td>Fixed-length unicode type</td>
+                    <td>np.unicode_</td>
+                </tr> -->
+
+            </tbody>
+        </table>
+        <li>Of a numpy array.</li>
+        <code>
+    print("Original Array:", arr)
+        </code>
+        <li>Appending to the array.</li>
+        <code>
+    arr = np.append(arr, [7])
+    print("Array after appending:", arr)
+        </code>
+        <h2>Output:</h2>
+        <code>
+Original Array: 
+    [[ 1. 2. 3. 4.]
+    [ 5. 6. 7. 8.]
+    [ 9. 10. 11. 12.]]
+        </code>
+        <code>
+Array after appending: 
+    [ 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 7.]
+        </code>   
+        <h2>N-Dimensional Array</h2> 
+        <p>Adding the values at the end</p>
+        <li>Of a numpy array.</li>
+        <code>
+    arr = np.arange(1, 13).reshape(2, 6)
+    print("Original Array")
+    print(arr, "\n")
+        </code>
+        <li>Create another array which is.</li>
+        <h5>-to be appended column-wise 👇</h5>
+        <code>
+    col = np.arange(5, 11).reshape(1, 6)
+    arr_col = np.append(arr, col, axis=0)
+    print("Array after appending the values
+    column wise")
+    print(arr_col, "\n")
+        </code>
+        <h5>-to be appended row wise</h5>
+        <code>
+    row = np.array([1, 2]).reshape(2, 1)
+    arr_row = np.append(arr, row, axis=1)
+    print("Array after appending the values row wise")
+    print(arr_row)
+        </code>
+        <h2>Output:</h2>
+        <code>
+Original Array:
+    
+    [[ 1 2 3 4 5 6]
+    [ 7 8 9 10 11 12]] 
+        </code>
+        <code>
+Array after appending the values column wise:
+    
+    [[ 1 2 3 4 5 6]
+    [ 7 8 9 10 11 12]
+    [ 5 6 7 8 9 10]] 
+        </code>
+        <code>
+Array after appending the values row wise:
+
+    [[ 1 2 3 4 5 6 1]
+    [ 7 8 9 10 11 12 2]]
+        </code>
+        </div>
+    </div>
+
+ <!-- end NumPy Array Manipulation -->
+
+<!-- Start Inserting Elements into the Array -->
+
+<h2>Inserting Elements into the Array</h2>
+<div class="snippet span-12">
+    <!-- <h2>Appending Elements to Array</h2> -->
+    <div class="codeblock">
+        <!-- <h2>One-Dimensional array</h2> -->
+        <!-- <p>One-Dimensional array.</p> -->
+        <table>
+            <thead>
+                <!-- <tr>
+                    <th>Meaning</th>
+                    <th>Explenation</th>
+                </tr> -->
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <li>One-Dimensional array.</li>
+        <code>
+    arr = np.asarray([1, 2, 3, 4])
+        </code>
+        <li>Python Program illustrating numpy.insert().</li>
+        <code>
+    print("1D arr:", arr)
+    print("Shape:", arr.shape)
+        </code>
+        <li>Inserting value 9 at index 1.</li>
+        <code>
+    a = np.insert(arr, 1, 9)
+    print("\nArray after insertion:", a)
+    print("Shape:", a.shape)
+        </code>
+        </div>
+    </div>
+
+<!-- end  -->
+
+
+<!-- Start -->
+
+<h2>Removing Elements from Numpy Array.</h2>
+<div class="snippet span-12">
+    <h2>One-Dimensional array.</h2>
+    <div class="codeblock">
+        <p>Python Program illustrating.</p>
+        <table>
+            <thead>
+                <!-- <tr>
+                    <th>Meaning</th>
+                    <th>Explenation</th>
+                </tr> -->
+            </thead>
+            
+        </table>
+        <li>numpy.delete().</li>
+        <code>
+    print("Original arr:", arr)
+    print("Shape : ", arr.shape)
+        </code>
+        <li>deletion from 1D array.</li>
+        <code>
+    object = 2
+    a = np.delete(arr, object)
+    print("\ndeleteing the value at index {} from
+    array:\n {}".format(object,a))
+    print("Shape : ", a.shape)
+        </code>
+        
+        </div>
+    </div>
+
+ <!-- End -->
+
+ <!-- Start Reshaping Array -->
+
+ <h2>Reshaping Array.</h2>
+ <div class="snippet span-12">
+     <!-- <h2>One-Dimensional array.</h2> -->
+     <div class="codeblock">
+         <!-- <p>Python Program illustrating.</p> -->
+         <table>
+             <thead>
+                 <!-- <tr>
+                     <th>Meaning</th>
+                     <th>Explenation</th>
+                 </tr> -->
+             </thead>
+             
+         </table>
+         <li>creating a numpy array.</li>
+         <code>
+    array = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16])
+         </code>
+         <li>printing array.</li>
+         <code>
+    print("Array: " + str(array))
+         </code>
+         <li>reshaping numpy array.</li>
+         <code>
+-Converting it to 2-D from 1-D array.           
+
+    reshaped1 = array.reshape((4, array.size//4))
+         </code>
+         <code>
+-printing reshaped array.
+    print("First Reshaped Array:")
+    print(reshaped1)
+         </code>
+         <code>
+-creating another reshaped array.
+    reshaped2 = np.reshape(array, (2, 8))
+         </code>
+         <code>
+-printing reshaped array.
+    print("\nSecond Reshaped Array:")
+    print(reshaped2)            
+         </code>
+         </div>
+     </div>
+
+  <!-- end Reshaping Array -->
+
+  <!-- Start Resizing an Array -->
+
+  <h2>Resizing an Array.</h2>
+  <div class="snippet span-12">
+      <!-- <h2>One-Dimensional array.</h2> -->
+      <div class="codeblock">
+          <p>Numpy arrays can be resized using the resize()
+            function. It returns nothing but changes the
+            original array.</p>
+          <table>
+              <thead>
+                  <!-- <tr>
+                      <th>Meaning</th>
+                      <th>Explenation</th>
+                  </tr> -->
+              </thead>
+              
+          </table>
+          <li>Making a random array.</li>
+          <code>
+    arr = np.array([1, 2, 3, 4, 5, 6])
+          </code>
+          <li>Required values 12, existing values 6.</li>
+          <code>
+    arr.resize(3, 4)
+    print(arr)
+          </code>
+          </div>
+        </div>
+   <!-- End Resizing an Array -->
+
+   <!-- start Flatten a Two Dimensional array -->
+
+   <h2>Flatten a Two Dimensional array.</h2>
+   <div class="snippet span-12">
+       <h2>One-Dimensional array.</h2>
+       <div class="codeblock">
+           <table>
+               <thead>
+                   <!-- <tr>
+                       <th>Meaning</th>
+                       <th>Explenation</th>
+                   </tr> -->
+               </thead>
+               
+           </table>
+           <li>Two dimensional numpy array.</li>
+           <code>
+    list_1 = [1, 2, 3, 4]
+    list_2 = [5, 6, 7, 8]
+    arr = np.array([list_1, list_2]) 
+    
+    print(arr.flatten())
+           </code>
+           </div>
+         </div>   
+
+   <!-- end Flatten a Two Dimensional array -->
+
+<!-- start Transpose -->
+
+<h2>Transpose.</h2>
+   <div class="snippet span-12">
+       <!-- <h2>One-Dimensional array.</h2> -->
+       <div class="codeblock">
+           <table>
+               <thead>
+                   <!-- <tr>
+                       <th>Meaning</th>
+                       <th>Explenation</th>
+                   </tr> -->
+               </thead>
+               
+           </table>
+           <li>making a 3x3 array.</li>
+           <code>
+    gfg = np.array([[1, 2],
+                    [4, 5],
+                    [7, 8]])
+           </code>
+           <li>before transpose.</li>
+           <code>
+    print(gfg, end ='\n\n')        
+           </code>
+            <li>after transpose</li>
+            <code>
+    print(gfg.transpose(1, 0))            
+            </code>
+           </div>
+         </div>  
+
+<!-- end Transpose -->
+
+<!-- start Combining and Splitting Commands -->
+
+<h2>Combining and Splitting Commands.</h2>
+<div class="snippet span-12">
+    <!-- <h2>Appending Elements to Array</h2> -->
+    <div class="codeblock">
+        <table>
+            <thead>
+                <tr>
+                    <th>Meaning</th>
+                    <th>Explenation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Combining Arrays.</td>
+                    <td>np.concatenate((arr1, arr2), axis = 0)</td>
+                </tr>
+                <tr>
+                    <td>Splitting array.</td>
+                    <td>np.split(arr, 3, 1)</td>
+                </tr>
+                <tr>
+                    <td>Horizontal Split.</td>
+                    <td>np.hsplit(arr, 3)</td>
+                </tr>
+                <tr>
+                    <td>Vertical Split.</td>
+                    <td>np.vsplit(a, 3)</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+ <!-- end Combining and Splitting Commands -->
+
+ <!-- Start Indexing, Slicing and Subsetting -->
+
+ <h2>Indexing, Slicing and Subsetting.</h2>
+   <div class="snippet span-12">
+       <h2>Subsetting Numpy Array.</h2>
+       <div class="codeblock">
+           <table>
+               <thead>
+                   <!-- <tr>
+                       <th>Meaning</th>
+                       <th>Explenation</th>
+                   </tr> -->
+               </thead>
+               
+           </table>
+           <li>Index values can be negative..</li>
+           <code>
+    print(arr)
+    print("Elements are:", arr[np.array([1, 3, -3])])
+           </code>
+           </div>
+         </div> 
+   
+ <!-- <h2>Indexing, Slicing and Subsetting.</h2> -->
+ <div class="snippet span-12">
+     <h2>Slicing Numpy Array.</h2>
+     <div class="codeblock">
+        <h2>The ":" operator means all elements till the end.</h2>
+         <table>
+             <thead>
+                 <!-- <tr>
+                     <th>Meaning</th>
+                     <th>Explenation</th>
+                 </tr> -->
+             </thead>
+             
+         </table>
+         <!-- <li>Index values can be negative..</li> -->
+         <code>
+  print(arr)
+         </code>
+         <li>a[start:stop:step]</li>
+         <code>
+    print("a[-2:7:1] = ",arr[-2:7:1])
+    print("a[1:] = ",arr[1:])
+         </code>
+         </div>
+       </div> 
+
+<!-- <h2>Indexing, Slicing and Subsetting.</h2> -->
+<div class="snippet span-12">
+    <h2>Indexing Numpy Array.</h2>
+    <div class="codeblock">
+       <p>Numpy array indexing is of two types: Integer
+        indexing and Boolean indexing.</p>
+        <table>
+            <thead>
+                <!-- <tr>
+                    <th>Meaning</th>
+                    <th>Explenation</th>
+                </tr> -->
+            </thead>
+            
+        </table>
+        <li>Integer Indexing.</li>
+        <code>
+    a = np.array([[1 ,2 ],[3 ,4 ],[5 ,6 ]])
+    print(a[[0 ,1 ,2 ],[0 ,0 ,1]])
+        </code>
+        <li>Boolean Indexing</li>
+        <code>
+    a = np.array([10, 40, 80, 50, 100])
+    print(a[a>50])
+        </code>
+        </div>
+      </div> 
+
+<!-- End Indexing, Slicing and Subsetting -->
+
+<!--Start Copying and Viewing Array -->
+
+<h2>Copying and Viewing Array.</h2>
+<div class="snippet span-12">
+    <!-- <h2>Appending Elements to Array</h2> -->
+    <div class="codeblock">
+        <table>
+            <thead>
+                <tr>
+                    <th>Meaning</th>
+                    <th>Explenation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coping to new memory space.</td>
+                    <td>arr.copy()</td>
+                </tr>
+                <tr>
+                    <td>Shallow Copy.</td>
+                    <td>arr.view()</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+<!-- end Copying and Viewing Array -->
+
+<!-- start NumPy Array Mathematics -->
+
+<h2>NumPy Array Mathematics.</h2>
+<div class="snippet span-12">
+    <h2>Arithmetic Operations</h2>
+    <div class="codeblock">
+        <table>
+            <thead>
+                <tr>
+                    <th>Meaning</th>
+                    <th>Explenation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Adds</b> <br> elements of 2 Array.</td>
+                    <td>np.add(a, b)</td>
+                </tr>
+                <tr>
+                    <td><b>Substracts</b> <br> elements of 2 Array.</td>
+                    <td>np.subtract(a, b)</td>
+                </tr>
+                <tr>
+                    <td><b>Multiply</b> <br> elements of 2 Array.</td>
+                    <td>np.multiply(a, b)</td>
+                </tr>
+                <tr>
+                    <td><b>divide</b> <br> elements of 2 Array.</td>
+                    <td>np.divide(a, b)</td>
+                </tr>
+
+                <tr>
+                    <td><b>Modulo</b> <br> elements of 2 Array.</td>
+                    <td>np.mod(a, b)</td>
+                </tr>
+
+                <tr>
+                    <td><b>Remainder</b> <br> elements of 2 Array.</td>
+                    <td>np.remainder(a,b)</td>
+                </tr>
+
+                <tr>
+                    <td><b>Power</b> <br> elements of 2 Array.</td>
+                    <td>np.power(a, b)</td>
+                </tr>
+
+                <tr>
+                    <td><b>Exponant</b> <br> elements of 2 Array.</td>
+                    <td>np.exp(b)</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <h2>Comparison</h2>
+        <li></li>
+        <code>
+    an_array = np.array([[1, 2], [3, 4]])
+    another_array = np.array([[1, 2], [3, 4]])
+        </code>
+        <li></li>
+        <code>
+    comparison = an_array == another_array
+    equal_arrays = comparison.all()
+        </code>
+        <li></li>
+        <code>
+    print(equal_arrays)
+        </code>
+
+    <h2>Vector Math</h2>
+    <code>
+    arr = np.array([.5, 1.5, 2.5, 3.5, 4.5, 10.1])
+    </code>
+
+    <li>numpy.delete().</li>
+            <code>
+    print("Original arr:", arr)
+    print("Shape : ", arr.shape)
+            </code>
+
+    <li>applying sqrt() method.</li>
+    <code>
+    print("Square-root:", np.sqrt(arr))
+    </code>
+
+    <li>applying log() method.</li>
+    <code>
+    print("Log Value: ", np.log(arr))
+    </code>
+
+    <li>applying absolute() method.</li>
+    <code>
+    print("Absolute Value:", np.absolute(arr))
+    </code>
+
+    <li>applying sin() method.</li>
+    <code>
+    print("Sine values:", np.sin(arr))    
+    </code>
+
+    <li>applying ceil() method.</li>
+    <code>
+    print("Ceil values:", np.ceil(arr))
+    </code>
+
+    <li>applying floor() method.</li>
+    <code>
+    print("Floor Values:", np.floor(arr))
+    </code>
+
+    <li>applying round_() method.</li>
+    <code>
+        print ("Rounded values:", np.round_(arr)).
+    </code>
+
+<h2>Statistic</h2> 
+
+<br>
+
+<li>numpy.delete().</li>
+    <code>
+        print("Original arr:", arr)
+        print("Shape : ", arr.shape)
+    </code>
+
+<li>1D array.</li>
+    <code>
+        arr = [20, 2, 7, 1, 34]
+    </code>
+
+<li>mean</li>
+    <code>
+        print("mean of arr:", np.mean(arr))
+    </code>
+
+<li>median</li>
+    <code>
+        print("median of arr:", np.median(arr))
+    </code>
+
+<li>sum</li>
+    <code>
+        print("Sum of arr(uint8):",
+        np.sum(arr, dtype = np.uint8))
+        print("Sum of arr(float32):",
+        np.sum(arr, dtype = np.float32))
+    </code>
+
+<li>min and max</li>
+    <code>
+        print("maximum element:", np.max(arr))
+        print("minimum element:", np.min(arr))
+    </code>
+
+<li>var</li>
+    <code>
+        print("var of arr:", np.var(arr))
+        print("var of arr(float32):",
+        np.var(arr, dtype = np.float32))
+    </code>
+
+<li>standard deviation</li>
+    <code>
+        print("std of arr:", np.std(arr))
+        print ("More precision with float32",
+        np.std(arr, dtype = np.float32))
+    </code>
+
+    <h2>corrcoef</h2>
+    <p>Create numpy 1d-array.</p>
+    
+    <li>create numpy 1d-array.</li>
+    <code>
+        array1 = np.array([0, 1, 2])
+        array2 = np.array([3, 4, 5])
+    </code>
+
+    <li>pearson product-moment correlation.</li>
+    <p>-coefficients of the arrays</p>
+    <code>
+        rslt = np.corrcoef(array1, array2)
+
+        print(rslt)
+    </code>
+
+    <h2>Output:</h2>
+    <code>
+        [[1. 1.]
+         [1. 1.]]
+    </code>
+
+        </div>
+    </div>
+
+
+
+ <!-- end NumPy Array Mathematics -->
+
+    
+
+
+        </section>
+    </section>
+</body>
+<p style="text-align: center;">© All Copyright 2024 by <a href="https://www.instagram.com/coding_by_teju?igsh=MWFrNjRiZTd6MmZzbg==">coding_by_teju</a></p>
+</html>
